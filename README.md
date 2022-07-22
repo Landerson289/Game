@@ -16,3 +16,5 @@ It adds 50 to them because pygame's sprite positioning is not centre aligned.
 It then returns the values to be the player's x and y values
 
 Below is a bad diagram of what I was trying to explain above:
+
+https://share.icloud.com/photos/01cSgje5dgR_79dPP1IjQvJ3Q 
