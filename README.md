@@ -17,3 +17,14 @@ https://replit.com/@andel252/Adventure-trial#images
 
 Also here's a link to the replit page:
 https://replit.com/@andel252/Adventure-trial?v=1
+
+# Documentation
+
+Each type of sprite in the game has an object, so there is one for the player, boomerangs, walls, enemies, boosts and the goal.
+Each object has the property 'pos' which is a list containing its x and y co-ordinates.
+Most objects then have the property 'vel' which is how much the x and y co-ordinates change.
+Some also have the property 'state' that determines if they are dead or alive etc.
+All objects have the method 'update' which handles collisions and drawing the sprite on the screen
+Some also have 'move' or 'move1' which handle moving the object to its new position, this is called inside update.
+There are more specified methods for individual objects which I will cover when I write up the full documentation
+
