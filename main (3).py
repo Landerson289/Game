@@ -110,7 +110,7 @@ def collide(type1,type2,x1,y1,x2,y2,**indexes):
             #warnings[i]=0
         elif throw_states[i]=="arriving":
             draw_text("Catch",(0,0,0),15,300,200)
-              #warnings[i]+=1
+              #warnings[i]1
               #print(warnings)
       else:
         throw_states[i]="arriving"
@@ -267,8 +267,8 @@ class wall:
     if onscreen(wall1X,wall1Y):
       screen.blit(SPRITES.wallimg,(wall1X,wall1Y))
   def move(self):
-    self.pos[0]+=self.vel[0]
-    self.pos[1]+=self.vel[1]
+    self.pos[0]+=self.vel[0]*TIME.dt
+    self.pos[1]+=self.vel[1]*TIME.dt
 class boomerang:
   def __init__(self,position,vel,power,state):
     self.position=position
@@ -336,8 +336,8 @@ class enemy:
     #self.owner=owner
   def move(self):
     #print(self.vel)
-    self.pos[0]+=self.vel[0]
-    self.pos[1]+=self.vel[1]
+    self.pos[0]+=self.vel[0]*TIME.dt
+    self.pos[1]+=self.vel[1]*TIME.dt
 
   def update(self,i):
     if self.state=="alive":
