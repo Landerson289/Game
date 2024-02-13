@@ -1,4 +1,5 @@
 # Game
+This is an old project of mine, hence why the code and repository are unorganised. This is also true for a lot of the projects on here
 
 The premise is you have three boomerangs and have to take out enemies to get to the next level.
 
